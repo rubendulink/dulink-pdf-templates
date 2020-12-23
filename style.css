@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'proxima-reg';
+    src: './ProximaNova-Regular.otf';
+}
+
+@font-face {
+    font-family: 'proxima-semi';
+    src: './proxima-nova-semibold.otf';
+}
+
+:root {
+    --main-grey: #a5a6a7
+}
+
+body {
+    padding: 0;
+    margin: 1em;
+    box-sizing: border-box;
+    font-family: 'proxima-semi', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    border: 1px solid var(--main-grey);
+}
+
+.top {
+    border-bottom: 1px solid var(--main-grey);
+    padding: 2em;
+}
+
+.bottom {
+    padding: 2em;
+}
+
+.line {
+    height: 1px;
+    background-color: var(--main-grey);
+    display: block;
+    width: ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.budget .budget__sub-totals span,
+.data .info h4,
+.logo span,
+table th,
+.grey {
+    color: var(--main-grey);
+}
+
+table th:first-of-type {
+    text-align: left;
+}
+
+table th:not(:first-of-type) {
+    text-align: right;
+}
+
+table td:first-of-type {
+    text-align: left;
+}
+
+table td:not(:first-of-type) {
+    text-align: right;
+}
+
+
+table tbody {
+    position: relative;
+}
+
+table tbody td {
+    line-height: 3.5em;
+    position: relative;
+}
+
+.right {
+    text-align: right;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    width: 6em;
+}
+
+.logo span {
+    margin: 1em;
+}
+
+.logo .paid {
+    position: absolute;
+    border-radius: 30px;
+    border: 3px solid red;
+    height: 5em;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+}
+
+.logo .paid span {
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: .25em;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data .info {
+    margin: 0 2em;
+    padding: 0 4em;
+}
+
+
+
+.data .info div p:not(:first-of-type){
+    color: var(--main-grey);
+}
+
+.budget {
+    padding: 2em 0;
+}
+
+.budget__table table{
+    width: 100%;
+}
+
+.budget .budget__sub-totals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.budget .budget__sub-totals span{
+    display: block;
+}
+
+.budget .budget__totals h4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.notes__2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes__2 .tax,
+.notes__2 .invoice,
+.notes__2 .note,
+.notes__2 .qr {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.notes__2 .qr {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.notes__2 .qr img {
+    width: 60%;
+    object-fit: scale-down;
+}
+
+
+.footer {
+    text-align: center;
+    margin: 8em 0 1em 0; 
+}
